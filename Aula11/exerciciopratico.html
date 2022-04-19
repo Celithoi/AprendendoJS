@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+
+    <h1>Teste de nacionalidade</h1>
+
+    Sua nacionalidade é <input type="text" name="textotxt" id="textotxt">
+    <input type="button" value="OK" onclick="testar()">
+
+    <div id="res">
+
+    </div>
+    <script>
+
+        function testar(){
+            
+
+            var texto = window.document.querySelector('input#textotxt')
+            var resultado = window.document.querySelector('div#res')
+            var resultado1 = String(texto.value)
+           
+            if(resultado1 == "brasileiro"){
+                resultado.innerHTML += `<p>Se você é ${resultado1}, então você nasceu no Brasil</p>` 
+
+            }else{
+                resultado.innerHTML = `<p>Você não é brasileiro, você é ${resultado1}, portanto um estrangeiro</p>`
+            }
+
+            
+            
+        }
+
+    </script>
+
+
+</body>
+</html>

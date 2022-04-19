@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <!--iNICIANDO  UM BLOCO CSS-->
+    
+    <style>
+
+        body
+        {
+
+            background: rgb(72, 81, 156) ;
+            color: white ;
+            font: normal 16pt verdana;
+
+        } 
+    </style>
+
+</head>
+<body>
+    
+<h1>Iniciando estudos com DOM</h1>
+<p>Aqui vai o resultado</p>
+<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+<div id = msg>
+    Clique em min
+</div>
+
+<script>
+    var paragrafo1 = window.document.getElementsByTagName('p')[0]
+    window.document.write(paragrafo1.innerText)
+    paragrafo1.style.color = 'black'
+
+    var conteudo_div_id = window.document.querySelector('div#msg')
+    window.document.write('<br>')
+    window.document.write('<p>'+conteudo_div_id.innerText +' '+ paragrafo1.innerText+'</p>')
+
+    var paragrafo3 = window.document.getElementsByTagName('p')[2]
+    paragrafo3.style.color = 'pink'
+    paragrafo3.style.font = 'normal 33pt arial'
+    
+
+    /*
+    var d = window.document.getElementById('msg')
+    d.style.background = 'green'
+    d.innerText = 'Estou aguardando.....'
+    */
+    
+    /*
+    var d = window.document.querySelector('div#msg')            div#msg se a div tiver id
+    d.style.background = 'black'                                div.msg se a div tiver class
+    */
+    
+</script>
+
+</body>
+</html>
