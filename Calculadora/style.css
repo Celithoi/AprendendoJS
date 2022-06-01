@@ -1,0 +1,109 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+
+}
+
+#calc {
+
+    width: 400px;
+    padding: 0.5em;
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#calc h3 {
+
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+    
+}
+
+#operacoes {
+
+    text-align: right;
+
+}
+
+#anterior-operacoes
+#atual-operacoes {
+
+    overflow-wrap: break-word;
+    padding: .2em;
+    min-height: 1.6em;
+
+}
+
+#anterior-operacoes {
+    
+    color: #777;
+    
+}
+
+#atual-operacoes {
+    
+    font-size: 3em;
+    font-weight: 700;
+    
+}
+
+#container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    
+}
+
+#container button{
+
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+
+}
+
+#container .number{
+
+    background-color: #f3f3f3;
+
+}
+
+#container button:hover{
+
+    background-color: #bababa;
+    border-color: #999;
+
+}
+
+#container .botao-iqual{
+
+    grid-column: span 2;
+    background-color: #75a5cb;
+
+}
+
+#container .botao-iqual:hover{
+
+    background-color: #3a91d8;
+    
+}
