@@ -41,7 +41,7 @@ body {
 
 }
 
-#operacaoAnterior
+#operacaoAnterior,
 #operacaoAtual {
 
     overflow-wrap: break-word;
@@ -60,7 +60,7 @@ body {
     
     font-size: 3em;
     font-weight: 700;
-    
+        
 }
 
 #container{
