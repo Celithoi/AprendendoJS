@@ -41,8 +41,8 @@ body {
 
 }
 
-#anterior-operacoes
-#atual-operacoes {
+#operacaoAnterior
+#operacaoAtual {
 
     overflow-wrap: break-word;
     padding: .2em;
@@ -50,13 +50,13 @@ body {
 
 }
 
-#anterior-operacoes {
+#operacaoAnterior {
     
     color: #777;
     
 }
 
-#atual-operacoes {
+#operacaoAtual {
     
     font-size: 3em;
     font-weight: 700;
